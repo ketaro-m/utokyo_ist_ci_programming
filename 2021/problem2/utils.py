@@ -61,6 +61,9 @@ def calc_k(x):
     return k
 
 
+
+# =========================================================
+# these calc_a2 and calc_k2 are incorrect (under implementation)
 def calc_a2(x):
     n = len(x)
     up1 = n * sum([i * x[i] for i in range(n)])

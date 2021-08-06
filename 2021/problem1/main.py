@@ -82,11 +82,16 @@ def ans4(fname, answering=True):
         elif possible_max_diff_sum == max_diff_sum:
             if len(ln_array) < max_len:
                 result = [ln_array]
+                max_len = len(ln_array) # necessary but didn't insert...
             elif len(ln_array) == max_len:
                 result.append(ln_array)
-            else:
-                pass
+            # else:
+            #     pass
 
+    # to count days from 1
+    # this section is not included in the submitted program but wrote the answer sheet counting from day1 : "day 299~305"
+    for arr in result:
+        arr += 1
 
     if answering:
         print("No.4 Answer: {} ".format(result))
@@ -96,7 +101,6 @@ def main():
     ans1('infections.txt')
     ans2()
     ans3('infections.txt', 'diff.txt')
-    
     ans4('infections.txt')
     return
 

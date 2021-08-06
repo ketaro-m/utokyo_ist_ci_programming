@@ -26,3 +26,11 @@ $ python data_create.py
 ```bash
 $ python main.py
 ```
+
+## Tips
+
+Get the useful document at local.
+
+```bash
+$ wget -pkKr https://note.nkmk.me/python/
+```
